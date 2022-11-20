@@ -7,7 +7,6 @@ import {
   StatusBar,
   TouchableOpacity,
 } from 'react-native';
-
 import styles from './styles';
 import CommonStyles from '../CommonStyles';
 
@@ -15,7 +14,6 @@ export default function LoginScreen({navigation}) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
- 
     const onsubmit = () => {
         console.log('click');
         if (email == '') {
@@ -25,7 +23,6 @@ export default function LoginScreen({navigation}) {
         } else if (email != '' && password != '') {
             navigation.navigate('OverView') 
         }
-
     }
   return (
     <SafeAreaView style={CommonStyles.appContainer}>
